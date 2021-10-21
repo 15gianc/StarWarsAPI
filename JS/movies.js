@@ -25,9 +25,9 @@ logout.onclick = function () {
 
 
 
-//API personajes
+//API Movies
 
-const API = "https://swapi.dev/api/people/";
+const API = "https://swapi.dev/api/films/";
 
 
 
@@ -60,12 +60,12 @@ const fillData = (data) =>{
         html += '<div class="card h-100">';
        
         html += '<div class="card-body">';
-        html += `<h5 class="card-title">${sw.name}</h5>`;
-        html += `<p class="card-text"> ${sw.gender} </p>`;
-        html += `<p class="card-text">Height : ${sw.height} </p>`;
-        html += `<p class="card-text">Hair Color : ${sw.hair_color} </p>`;
-        html += `<p class="card-text">Eye Color : ${sw.eye_color} </p>`;
-        html += `<p class="card-text">Birth Year : ${sw.birth_year} </p>`;
+        html += `<h5 class="card-title">${sw.title}</h5>`;
+        html += `<p class="card-text">Director : ${sw.director} </p>`;
+        html += `<p class="card-text">Producer : ${sw.producer} </p>`;
+        html += `<p class="card-text">Release : ${sw.release_date} </p>`;
+        html += `<p class="card-text">Episode: ${sw.episode_id} </p>`;
+        
 
         
 
